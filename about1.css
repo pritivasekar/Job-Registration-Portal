@@ -1,0 +1,25 @@
+h1 {text-align:center; font-size: 45px; font-family:Serif; font-weight: strong;}
+p {font-family:Sans-Serif; text-align:left; font-size: 20px}
+.container {background-color:burlywood;}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,900,300,300);
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  -o-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+  .container {
+    max-width:200px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+  }

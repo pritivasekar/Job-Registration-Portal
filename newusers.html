@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='icon' href='fav2.png' type='image/x-icon' sizes="16x16" />
+ 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	 <script type="text/javascript" href="validation.js"></script>
+ 	 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ 	  <style>
+  	
+	form{
+		background: #f7f7f7;
+		padding: 30px;
+		margin-bottom: 15px;
+		box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+		opacity: 0.9;
+
+	}
+	.second{
+		margin: 50px auto
+	}
+	.second{
+		display:  none;
+	}
+	body{
+		/* background-image: url('background.png'); */
+		background-color: yellow;
+	}
+	h4{
+		margin: 0px 20px 20px 60px;
+	}
+	#member{
+		margin: 200px 0px 0px 0px;
+	}
+  </style>
+   <script>
+  	function verify(){
+			var username=document.getElementById("name").value
+			var password=document.getElementById("password").value;
+			var rpass=document.getElementById("rpassword").value;
+			if (username==""||rpass=="") {
+				swal({
+					icon:"warning",
+					title:"fields can't be blank",
+				});
+				return false;
+
+			}
+			
+			
+		} 
+	</script>
+</head>
+<body>
+	<div class="fm container mt-5">
+		<div class="row">
+			<div class="col-md-12">
+	<form method="post" action="insert.php" onsubmit="return verify()">
+		
+		<div class="form-group">
+            <label for="name">Name <span class="text-danger">*</span> </label>
+            <input type="text" class="form-control" placeholder="Please Enter your name" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="mobile_number">phone and WhataApp number <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" placeholder="Enter Your number" id="pwd" required>
+          </div>
+          <div class="form-group">
+            <label for="mobile_number">Address <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" placeholder="Enter Your number" id="address  " required>
+          </div>
+          <div class="form-group">
+            <label for="mobile_number">Email</label>
+            <input type="email" class="form-control" placeholder="Enter Your email" id="pwd" required>
+		  </div>
+		  <div class="form-group">
+            <label for="mobile_number">Skills</label>
+            <input type="name" class="form-control" placeholder="Enter Your email" id="skill" required>
+          </div>
+          <div class="form-group">
+            <label for="mobile_number">qualification:  <span class="text-danger">*</span></label>
+              <select name="" id="" class="form-control" required>
+                <option value="">choose qualification</option>
+                <option value="">10th</option>
+                <option value="">12th</option>
+                <option value="">Degree</option>
+                
+                <option value="">Under Graduate</option>
+                <option value="">Graduate</option>
+                <option value="">Post Graduate</option>
+                <option value="">Below SSC</option>
+                <option value="">Other</option>
+              </select>
+          </div>
+          <div class="form-group mt-lg-2">
+            <label for="mobile_number">Experice</label>
+            <select name="" id="">'
+				<option value="">years</option>
+				<option value="">1</option>
+				<option value="">2</option>
+				<option value="">3</option>
+				<option value="">4</option>
+				<option value="">5</option>
+				<option value="">6</option>
+				<option value="">7</option>
+			</select>
+			<select name="" id="">
+				<option value="">moths</option>
+				<option value="">1</option>
+				<option value="">2</option>
+				<option value="">3</option>
+				<option value="">4</option>
+				<option value="">5</option>
+				<option value="">6</option>
+				<option value="">7</option>
+				<option value="">8</option>
+				<option value="">9</option>
+				<option value="">10</option>
+				<option value="">11</option>
+				<option value="">12</option>
+				
+			</select>
+          </div>
+          <div class="form-group mt-lg-2">
+            <label for="mobile_number">Resume</label>
+            <input type="file" class="" placeholder="Enter Your number" id="file">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	</div>
+</div>
+</div></html>
